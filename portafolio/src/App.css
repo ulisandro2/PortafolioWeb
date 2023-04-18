@@ -18,4 +18,12 @@ html, body {
   }
   
 
+  .green{
+    color: #01be96;
+  }
+
+
+  .slick-list, .slick-slider,.slick-track{
+    padding: 2rem 0 ;
+  }
 

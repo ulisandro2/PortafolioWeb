@@ -46,7 +46,7 @@ const ContainerNav = styled.div`
      @media(max-width:640px) {
 
      .nav{
-      position: absolute;
+      position: fixed;
     display: flex;
     flex-direction: column;
     background-color: #01be96;
@@ -59,7 +59,7 @@ const ContainerNav = styled.div`
     align-items: center;
     font-size: 1.4rem;
     gap: 2rem;
-    
+    z-index: 99;
     font-weight: 700;
     
     transition: height 400ms ease-in-out ;
@@ -67,12 +67,14 @@ const ContainerNav = styled.div`
      }
 
         .bars{
-            width:40px ;
-            height: 40px;
+            width:30px ;
+            height: 30px;
             position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 0.5rem;
+            z-index: 100;
             .bar{
                 position: absolute;
                 width: 100%;
@@ -107,6 +109,7 @@ const ContainerNav = styled.div`
         text-decoration: none;
         font-weight: 400;
         position: relative;
+        
         :before{
             content: "";
             position: absolute;
