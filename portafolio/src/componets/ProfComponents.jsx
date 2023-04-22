@@ -14,7 +14,9 @@ const ProfComponents = () => {
             <h3>Front-End Developer </h3>
             <p>Hello, my name is Ulises Sanchez and I am a Fronted developer specialized in React js, finishing my CoderHouse fronted react development course more than 1 year ago. Currently I am also studying other technologies and specializing in the Backend to be FullStack. I have experience in freelance projects that I have in my profile. I am able to create pages with very good CSS functionality and styles (especially web e-commerce).
             I live in Argentina, Buenos Aires, and I am studying public accounting at the EAN University (Escuela Argentina De Negocios) in my second year.
-            My goal is to be able to work in a position in the IT world where I can demonstrate my skills and grow professionally.</p>
+            My goal is to be able to work in a position in the IT world where I can demonstrate my skills and grow professionally.
+            
+            </p>
             <button><a href={Img3} download='Cv-sanchezUlises'>Download CV</a></button>
             <Social>
                 <p>Check out my</p>
@@ -43,14 +45,16 @@ const ContainerProf=styled.div`
       width: 90%;
     
    }
-   @media screen and (max-width:640px){
+   @media screen and (max-width:700px){
         flex-direction:column;
         
     }
+  
 
 `
 
 const Texts = styled.div`
+
 
      flex: 1;
      h4{
@@ -75,8 +79,12 @@ const Texts = styled.div`
      }
      p{
         font-weight: 300;
-        font-size: 1.2rem;
-
+        font-size: 1rem;
+        @media screen and (max-width:770) {
+       p{
+        font-size: 0.7rem;
+       }    
+  }
      }
      button{
         padding:0.5rem 0.8rem ;
@@ -154,7 +162,7 @@ const Img =styled.div`
         width: 18rem;
         
     }
-    @media screen and (max-width:640px){
+    @media screen and (max-width:700px){
         width: 100%;
         
     }

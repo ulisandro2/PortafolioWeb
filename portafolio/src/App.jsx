@@ -4,6 +4,7 @@ import ProfComponents from './componets/ProfComponents'
 import Certificate from './componets/Certificate'
 import Skills from './componets/Skills'
 import Projects from './componets/Projects'
+import Cursos from './componets/Cursos'
 
 
 
@@ -20,8 +21,10 @@ function App() {
      <SkillBackground>
         <Skills/> 
      </SkillBackground>
-    
-     <Projects/>
+      <Projects/>
+     <CursosBackground>
+      <Cursos/>
+      </CursosBackground> 
 
     </Container>
   )
@@ -44,5 +47,10 @@ const SkillBackground=styled.div`
   background: linear-gradient(159deg, rgb(45,45,58) 0% , rgb(43,43,53) 100%);
 
 `
+const CursosBackground=styled.div`
+  background: linear-gradient(159deg, rgb(45,45,58) 0% , rgb(43,43,53) 100%);
+
+`
+
 
 export default App

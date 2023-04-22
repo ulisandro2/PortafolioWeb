@@ -7,7 +7,7 @@ const Project = (props) => {
 
     const {img, disc,deploy, github} = props.item
   return (
-    <ContainerProject>
+    <ContainerProject className='project'>
         <img src={img} alt='project'/>
         <div className='disc'>
             <h1 className='green'>Descripction</h1>
@@ -22,7 +22,6 @@ const Project = (props) => {
 
 const ContainerProject=styled.div`
   height: 12rem;
-  width: 25rem;
   background-color: #4e5156;
   margin: 0 1rem;
   padding: 0 0.5rem;
@@ -57,8 +56,8 @@ const ContainerProject=styled.div`
   }
 
   p{
-    width: 90%;
-    font-size: 0.8rem;
+    width: 95%;
+    font-size: 0.7rem;
     }
     a{
         margin-left: 0.4rem;
