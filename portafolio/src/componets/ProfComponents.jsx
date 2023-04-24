@@ -4,14 +4,23 @@ import {FaLinkedinIn} from 'react-icons/fa'
 import {BsGithub} from 'react-icons/bs'
 import Img2 from '../assets/Software Developer.jpg'
 import Img3 from '../assets/cv.pdf'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const ProfComponents = () => {
+
+ const [text] = useTypewriter({
+    words:['Front-End Developer','Developer Web','and Future Accountant'],
+    loop:true,
+    typeSpeed:240,
+    delaySpeed:600,
+    deleteSpeed:200,
+ })
   return (
     <ContainerProf id='home'>
         <Texts>
             <h4>Hello <span className='green'> I'am</span></h4>
             <h1 className='green'>Ulises Sanchez</h1>
-            <h3>Front-End Developer </h3>
+            <h3>{text}<Cursor cursorBlinking="false" cursorColor='white'  /> </h3>
             <p>Hello my name is Ulises Sanchez, I live in Argentina Buenos Aires, I am 20 years old and I am a Frontend Developer specialized in React Js.
 I finished a 6 months programming course at Coder House where I learned multiple technologies to create web pages. Currently I am also studying some technologies to specialize in Backend (My goal is to be FullStack) like express and MySql. 
 I have experience as a freelance web developer where I created 2 projects with HTML , CSS and JavaScript , with a domain and hosting , with SEO settings , managed with Git and GitHub , and fully responsive for all devices. All this I also applied it to 2 projects but containing React where what stands out is that they are 2 e-commerce web pages with a product catalog , a detail , shopping cart , purchase orders and connected to a Firebase database(!!! These projects are generic not real !!!).
@@ -24,8 +33,8 @@ My goal is to be able to find an IT job where I can demonstrate my skills and kn
             <Social>
                 <p>Check out my</p>
                 <div className='social-icons'>
-                    <span><a href='#'><FaLinkedinIn/></a></span>
-                    <span><a href='#'><BsGithub/></a></span>
+                    <span><a href='https://www.linkedin.com/in/ulises-sanchez-b6b935238/'><FaLinkedinIn/></a></span>
+                    <span><a href='https://github.com/ulisandro2'><BsGithub/></a></span>
                 </div>
             </Social>
         </Texts>
@@ -41,14 +50,14 @@ const ContainerProf=styled.div`
 
      display: flex;
      gap: 2rem;
-     padding-top: 3rem;
+     padding-top: 7rem;
      width: 90%;
      margin: 0 auto;
    @media screen and (max-width:840px) {
       width: 90%;
     
    }
-   @media screen and (max-width:800px){
+   @media screen and (max-width:840px){
         flex-direction:column;
         
     }
@@ -152,7 +161,8 @@ const Social = styled.div`
 
 const Img =styled.div`
    img{
-    width: 25rem;
+    width: 30rem;
+    
     filter: drop-shadow(0px 10px 10px #1bddd3);
     transition: transform 400ms ease-in-out;
     @media screen and (max-width:790px){
@@ -163,9 +173,15 @@ const Img =styled.div`
         width: 18rem;
         
     }
-    @media screen and (max-width:800px){
+    @media screen and (max-width:840px){
         width: 100%;
+        img{
+            width: 16rem;
+        }
+    }
+    @media screen and (max-width:960px){
         
+        width: 20rem;
     }
    }
 

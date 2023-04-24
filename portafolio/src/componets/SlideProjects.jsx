@@ -7,7 +7,7 @@ import Project from './Project';
 const data = [
   
   {img:'https://i.ibb.co/k8N0C31/malala.png' , 
-    disc:'Malala Jujuy Hostel es mi primer proyecto y mi primera experiencia freelancer como desarrollador web. Esta hecha con HTML con CSS y un poquito de JavaScript , tambien utilize Bootstrap y mejoras de Seo. ',
+    disc:'Malala Jujuy Hostel is my first project and my first freelance experience as a web developer. It is made with HTML with CSS and a little bit of JavaScript, it also uses Bootstrap and SEO improvements. ',
     deploy:'https://malalajujuyhostel.com/',
     github:'https://github.com/ulisandro2/Malala-Jujuy-Hostel--main'
     
@@ -17,19 +17,19 @@ const data = [
 
 
   {img:'https://i.ibb.co/V2Zy7qj/marba.png', 
-   disc:'Marbasi es un proyecto similar a Malala con las tecnologias , solo que esta es una sola pestaña. Es mi segundo proyecto freelance para una empresa.',
+   disc:'Marbasi is a project similar to Malala with the technologies, only this is a single tab. It is my second freelance project for a company.',
    deploy:'https://ulisandro2.github.io/marba-/',
    github:'https://github.com/ulisandro2/marba-'
   },
 
   {img:'https://i.ibb.co/4dSwDwQ/Captura-React.png' , 
-   disc:'Proyecto hecho con React para aprobar un curso de React Js , esta app tiene un catalogo de productos , un detalle , un carrito de compras con orden de compra , navegacion entre componenetes y animacion con modo oscuro/blanco.',
+   disc:'Project made with React to pass a React Js course, this app has a product catalog, a detail, a shopping cart with purchase order, navigation between components and animation with dark/white mode.',
    deploy:'https://gamerstoreapp.ga/',
     github:'https://github.com/ulisandro2/ecommerse-sanchez/tree/main/app-sanchez'
   },
 
   {img:'https://i.ibb.co/bBWQhW7/Captura-Moon.png' , 
-   disc:'Proyecto e-commerse con React sobre venta de ropa femenina con todas las funciones de una pagina e-commerse. Este proyecto fue de a dos lo que significo trabajar en equipo por primera vez.',
+   disc:'Ecommerce project with React on the sale of womens clothing with all the functions of an e-commerce page. This project was for two, which meant working as a team for the first time.',
    deploy:'https://moonproyecto.netlify.app/',
     github:'https://github.com/ulisandro2/moon2'
   }

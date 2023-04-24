@@ -1,17 +1,35 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import styled from 'styled-components'
-// import {FiPhoneCall} from 'react-icons/fi'
-// import {HiOutlineMailOpen} from 'react-icons/fi'
 import {FaLinkedinIn} from 'react-icons/fa'
 import {BsGithub} from 'react-icons/bs'
 import { AiFillMail, AiFillPhone, AiOutlineArrowUp, AiOutlineMail } from 'react-icons/ai'
 import {CgProfile} from 'react-icons/cg'
 import { MdAlternateEmail } from 'react-icons/md'
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Fade, Slide , Zoom } from "react-awesome-reveal";
 
 
 
 const Footer = () => {
+
+  const notify = () => toast.success("Message sent, I will answer you as soon as possible");
   
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_f4llepg', 'template_uoat4gq', form.current, 'NrOieklgUpLbUJwIc')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
   const scrollUp = () => {
     window.scroll({
       top:0,
@@ -25,45 +43,60 @@ const Footer = () => {
         <h1>Portfolio</h1>
         <div className='address'>
           <h1>Address:</h1>
+          <Slide direction='left'>
           <p>Libertad 1910 , Vicente Lopez / Buenos Aires</p>
+          </Slide>
         </div>
         <div className='links'>
           <h1>Contact me directly:</h1>
+          <Slide direction='left'>
           <div>
             <span><AiFillPhone/></span>
             <a href='tel:+541151399129 '>+54 9 11 5139-9129</a>
           </div>
-          <div>
+          </Slide>
+          <Slide direction='left'>
+           <div>
           <span><AiOutlineMail/></span>
           <a href='sanchezulises952@gmail.com'>sanchezulises952@gmai.com</a>
           </div>
+          </Slide>
         </div>
         <div className='profiles'>
             <h1>Check my profiles</h1>
+            <Zoom>
            <div className='icons'>
-            <span><a href='#'><FaLinkedinIn/></a></span>
-            <span><a href='#'><BsGithub/></a></span>
+            <span><a href='https://www.linkedin.com/in/ulises-sanchez-b6b935238/'><FaLinkedinIn/></a></span>
+            <span><a href='https://github.com/ulisandro2'><BsGithub/></a></span>
             </div> 
+            </Zoom>
         </div>
-        <ArrowUp onClick={scrollUp}><AiOutlineArrowUp/></ArrowUp>
+
+        <Fade>
+        <ArrowUp onClick={scrollUp}><AiOutlineArrowUp/></ArrowUp></Fade>
       </Profile>
       <Form>
-        <form>
+      
+
+        <form ref={form} onSubmit={sendEmail}>
           <div className='name'>
             <span><CgProfile/></span>
-            <input type='text' placeholder='Fullname...'></input>
+            <input type='text' name='user_name' placeholder='Fullname...'></input>
           </div>
           <div className='email'>
             <span><MdAlternateEmail/></span>
-            <input type='email' placeholder='Email...'></input>
+            <input type='email' name='user_email' placeholder='Email...'></input>
           </div>
           <div className='name'>
             <span><AiFillMail/></span>
-            <textarea cols='30' rows='10' placeholder='Message...'></textarea>
+            <textarea cols='30' rows='10' name='message' placeholder='Message...'></textarea>
           </div>
-          <button  >Submit</button>
+          <button value='Send' onClick={notify} >Submit</button>
         </form>
+       
       </Form>
+      <ToastContainer/>
+      
     </Container>
   )
 }

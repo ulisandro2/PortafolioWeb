@@ -9,14 +9,18 @@ import Footer from './componets/Footer'
 
 
 
+
 function App() {
   
 
   return (
     <Container>
      <Banner>
+     
        <NavBar/>
+       
        <ProfComponents/>
+       
      </Banner> 
      <Certificate/>
      <SkillBackground>
@@ -37,7 +41,7 @@ const Container = styled.div`
 const Banner = styled.div`
   background: linear-gradient(159deg, rgb(45,45,58) 0% , rgb(43,43,53) 100%);
   height:100vh ;
-  @media screen and (max-width:640px){
+  @media screen and (max-width:1200px){
         height: 100%;
         padding-bottom: 1rem;
       }

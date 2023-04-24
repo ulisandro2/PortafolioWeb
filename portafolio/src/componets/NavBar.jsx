@@ -1,17 +1,25 @@
 import React from 'react'
 import { useState } from 'react'
 import styled from 'styled-components'
+import Uli from '../assets/fotoMia.jpg'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const NavBar = () => {
   
     const [bar , setBar] = useState(false);
+   
+    const notify = () => toast.info("Coming soon");
 
+  
 
   return (
-    <ContainerNav bar={bar}>
+    
+    <ContainerNav bar={bar} >
       <Logo>
-        {/* <span></span> */}
-        <h1>Portafolio </h1>
+          <span><a href='#home'><img src={Uli}/></a></span>
+        <h1> Portfolio </h1>
       </Logo>
       <div className='nav'>
         <span><a href='#home'>Home</a></span>
@@ -19,34 +27,48 @@ const NavBar = () => {
         <span><a href='#skills'>Skills</a></span>
         <span><a href='#projects'>Projects</a></span>
         <span><a href='#certificado'>Certificates</a></span>
-        <span><a href='#'>Accountant</a></span>
+        <span><a href='#' onClick={notify}>Accountant</a></span>
+       
         <span><a href='#footer'>Contact Me</a></span>
         
 
       </div>
+      
     <div onClick={()=> setBar(!bar)}
       className='bars'>
         <div className='bar'></div>
     </div>
     
+   
     </ContainerNav>
+    
   )
 }
 
 const ContainerNav = styled.div`
+    
      display: flex;
+     position: fixed;
+     z-index: 10000;
      align-items: center;
      justify-content: space-between;
-     width: 80%;
+     width: 100%;
      margin: 0 auto;
      padding: 1.5rem 0 ;
      max-width: 1280px;
+     
+     
+
+    
      @media(max-width:763px) {
         width: 90%;
         
      }
 
-     @media(max-width:800px) {
+     @media(max-width:840px) {
+ 
+
+
 
      .nav{
       position: fixed;
@@ -141,9 +163,11 @@ const Logo = styled.div`
      display: flex;
      align-items: center;
      gap: 0.5rem;
-     span{
-        font-size: 1.8rem;
-        color: green;
+     margin-left: 1rem;
+     span img{
+        width: 40px;
+        border-radius: 5px;
+        border: solid 1px black;
      }
 
      h1{
