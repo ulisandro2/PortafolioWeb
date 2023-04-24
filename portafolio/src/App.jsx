@@ -5,6 +5,7 @@ import Certificate from './componets/Certificate'
 import Skills from './componets/Skills'
 import Projects from './componets/Projects'
 import Cursos from './componets/Cursos'
+import Footer from './componets/Footer'
 
 
 
@@ -25,7 +26,7 @@ function App() {
      <CursosBackground>
       <Cursos/>
       </CursosBackground> 
-
+      <Footer/>
     </Container>
   )
 }

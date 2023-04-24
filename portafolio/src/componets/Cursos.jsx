@@ -113,7 +113,7 @@ const Container = styled.div`
 
 
    .slick-dots li.slick-active button{
-    background: #01be96;
+    background: #1bddd3;
     width: 15px;
    }
 
@@ -143,7 +143,7 @@ const Buttons =styled.div`
     background-color: transparent;
     margin-left: 0.5rem;
     border: none;
-    color: #01be96;
+    color: #1bddd3;
     cursor: pointer;
     font-size: 1.3rem;
     

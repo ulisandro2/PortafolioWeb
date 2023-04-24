@@ -49,7 +49,7 @@ const ContainerNav = styled.div`
       position: fixed;
     display: flex;
     flex-direction: column;
-    background-color: #01be96;
+    background-color: #1bddd3;
     top: 0;
     right: 0;
     bottom:0;

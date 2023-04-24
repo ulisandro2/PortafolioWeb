@@ -22,7 +22,7 @@ const ContainerCard= styled.div`
    text-align: center;
    span{
     font-size: 4rem;
-    color: #01be96;
+    
    }
    h1{
     font-size: 1.4rem;
