@@ -4,7 +4,7 @@ import SlideProjects from './SlideProjects'
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id='projects'>
         <h1>My <span className='green'>Projects</span></h1>
    
    <Slide>

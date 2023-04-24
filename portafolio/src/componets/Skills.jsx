@@ -4,7 +4,7 @@ import SliderComp from './SliderComp'
 
 const Skills = () => {
   return (
-    <ContainerProjects>
+    <ContainerProjects id='skills'>
     <h1>My  <span className='green'>Skills</span></h1>
 
     <Slide>

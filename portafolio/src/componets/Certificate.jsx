@@ -12,27 +12,27 @@ const Certificate = () => {
 
 
   return (
-    <ConatinerCertificate>
-      <h4>My <span className='green'>Certificates</span></h4>
+    <ConatinerCertificate id='services'>
+      <h4>My <span className='green'>Services/Courses</span></h4>
        <Cards>
         <Card 
          Icon={<MdWeb/>}
         title={'Developer Web'}
-        disc={'En este curso de Desarrollo Web aprendi como hacer una pagina web totalmente responsive con HTML(+ Bootstrap), CSS(+SASS) , GIT Y GITHUB. Tambien puedo optimizar el SEO de mi pagina web y subirla al servidor con un hosting ya sea pago o gratuito y un dominio(Nombre de la pagina) '} >
+        disc={'In this Web Development course I learned how to make a fully responsive website with HTML(+ Bootstrap), CSS(+SASS) , GIT and GITHUB. I can also optimize the SEO of my website and upload it to the server with a hosting either paid or free and a domain (Name of the page). '} >
 
         </Card>
 
         <Card 
          Icon={<SiJavascript/>}
         title={'JavaScript'}
-        disc={'En este curso de JavaScript aprendi como manejar el DOM de mi pagina web para darle elementos interactivos con eventos o ciclos , manejo de datos y objetos con arrays y storage(+JSON) , animacion en la interfaz web con Frameworks de JS   '} >
+        disc={'In this JavaScript course I learned how to manage the DOM of my web page to give it interactive elements with events or cycles, data and object management with arrays and storage(+JSON), animation in the web interface with JS Frameworks.'} >
 
         </Card>
 
         <Card 
          Icon={<DiReact/>}
         title={'React Js '}
-        disc={'En este curso de React Js aprendi como instalar , configurar y utilizar React para la creacion de excelentes aplicaciones web con multiples funciones avanzadas y una buena circulacion de la pagina(+ReactRouterDom). Excelentes E-commerse con Carritos de compras , detalles de producto , proceso de compra y base de datos de los productos(+Firebase).  '} >
+        disc={'In this React Js course I learned how to install, configure and use React to create excellent web applications with multiple advanced functions and a good circulation of the page (+ReactRouterDom). Excellent E-commerce with shopping carts, product details, checkout process and product database (+Firebase).'} >
 
         </Card>
 

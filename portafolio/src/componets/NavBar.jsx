@@ -14,11 +14,14 @@ const NavBar = () => {
         <h1>Portafolio </h1>
       </Logo>
       <div className='nav'>
-        <span><a href='#'>Home</a></span>
-        <span><a href='#'>Skills</a></span>
-        <span><a href='#'>Projects</a></span>
-        <span><a href='#'>Services</a></span>
+        <span><a href='#home'>Home</a></span>
+        <span><a href='#services'>Services</a></span>
+        <span><a href='#skills'>Skills</a></span>
+        <span><a href='#projects'>Projects</a></span>
+        <span><a href='#certificado'>Certificates</a></span>
         <span><a href='#'>Accountant</a></span>
+        <span><a href='#footer'>Contact Me</a></span>
+        
 
       </div>
     <div onClick={()=> setBar(!bar)}
@@ -43,7 +46,7 @@ const ContainerNav = styled.div`
         
      }
 
-     @media(max-width:640px) {
+     @media(max-width:800px) {
 
      .nav{
       position: fixed;

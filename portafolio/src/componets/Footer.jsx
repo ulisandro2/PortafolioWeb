@@ -20,7 +20,7 @@ const Footer = () => {
   }
   
   return (
-    <Container>
+    <Container id='footer'>
       <Profile>
         <h1>Portfolio</h1>
         <div className='address'>

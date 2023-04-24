@@ -7,14 +7,17 @@ import Img3 from '../assets/cv.pdf'
 
 const ProfComponents = () => {
   return (
-    <ContainerProf>
+    <ContainerProf id='home'>
         <Texts>
             <h4>Hello <span className='green'> I'am</span></h4>
             <h1 className='green'>Ulises Sanchez</h1>
             <h3>Front-End Developer </h3>
-            <p>Hello, my name is Ulises Sanchez and I am a Fronted developer specialized in React js, finishing my CoderHouse fronted react development course more than 1 year ago. Currently I am also studying other technologies and specializing in the Backend to be FullStack. I have experience in freelance projects that I have in my profile. I am able to create pages with very good CSS functionality and styles (especially web e-commerce).
-            I live in Argentina, Buenos Aires, and I am studying public accounting at the EAN University (Escuela Argentina De Negocios) in my second year.
-            My goal is to be able to work in a position in the IT world where I can demonstrate my skills and grow professionally.
+            <p>Hello my name is Ulises Sanchez, I live in Argentina Buenos Aires, I am 20 years old and I am a Frontend Developer specialized in React Js.
+I finished a 6 months programming course at Coder House where I learned multiple technologies to create web pages. Currently I am also studying some technologies to specialize in Backend (My goal is to be FullStack) like express and MySql. 
+I have experience as a freelance web developer where I created 2 projects with HTML , CSS and JavaScript , with a domain and hosting , with SEO settings , managed with Git and GitHub , and fully responsive for all devices. All this I also applied it to 2 projects but containing React where what stands out is that they are 2 e-commerce web pages with a product catalog , a detail , shopping cart , purchase orders and connected to a Firebase database(!!! These projects are generic not real !!!).
+
+I am also studying at the EAN university (Escuela Argentina de Negocios) to become a Public Accountant , I am currently in my second year of the career with the desire to continue acquiring knowledge. 
+My goal is to be able to find an IT job where I can demonstrate my skills and knowledge, I would like to have a team and gain experience and grow professionally. Although I also accept freelance jobs of all kinds, I have experience in creating web pages and creating logos with Adobe Illustrator. 
             
             </p>
             <button><a href={Img3} className='green' download='Cv-sanchezUlises'>Download CV</a></button>
@@ -45,7 +48,7 @@ const ContainerProf=styled.div`
       width: 90%;
     
    }
-   @media screen and (max-width:700px){
+   @media screen and (max-width:800px){
         flex-direction:column;
         
     }
@@ -160,7 +163,7 @@ const Img =styled.div`
         width: 18rem;
         
     }
-    @media screen and (max-width:700px){
+    @media screen and (max-width:800px){
         width: 100%;
         
     }
