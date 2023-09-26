@@ -22,7 +22,7 @@ const data = [
    github:'https://github.com/ulisandro2/marba-'
   },
 
-  {img:'https://i.ibb.co/4dSwDwQ/Captura-React.png' , 
+  {img:'https://i.ibb.co/89qq1CX/gamerstore.png' , 
    disc:'Project made with React to pass a React Js course, this app has a product catalog, a detail, a shopping cart with purchase order, navigation between components and animation with dark/white mode.',
    deploy:'https://gamerstoreapp.ga/',
     github:'https://github.com/ulisandro2/ecommerse-sanchez/tree/main/app-sanchez'
